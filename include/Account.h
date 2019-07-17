@@ -11,6 +11,7 @@ using namespace std;
 class Account {
 public:
     Account();
+    ~Account();
 private:
     string number_;
     string name_;

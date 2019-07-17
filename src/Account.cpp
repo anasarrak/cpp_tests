@@ -7,3 +7,9 @@
 Account::Account() {
 
 }
+
+
+Account::~Account() {
+
+}
+
