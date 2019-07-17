@@ -4,8 +4,12 @@ project(Bank)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(include)
-file(GLOB SOURCES "src/*.cpp")
 
-add_executable(main ${SOURCES})
+add_library(Account SHARED
+        src/Account.cpp)
+add_library(Person SHARED
+        src/Person.cpp)
 
-target_include_directories(Bank PUBLIC ${SOURCES})
+add_executable(main src/main.cpp)
+
+target_link_libraries(main Account Person)
