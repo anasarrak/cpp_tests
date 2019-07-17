@@ -3,3 +3,7 @@
 //
 
 #include "../include/Account.h"
+
+Account::Account() {
+
+}
